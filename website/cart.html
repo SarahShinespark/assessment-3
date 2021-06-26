@@ -5,9 +5,8 @@
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <title>Shopping @ Code Platoon</title>
+    <title>Shopping Cart @ Code Platoon</title>
 </head>
 <body>
   <!--This page should show just a basic intro and other common basic home page content-->
@@ -22,7 +21,7 @@
       <!--Navbar items-->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link"        aria-current="page">Home</a>
+          <a class="nav-link active" href="index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="kitchen.html">Shop Kitchen</a>
@@ -37,15 +36,54 @@
             &emsp;
         </li>
         <li class="nav-item" id="cart-text">
-          <a class="nav-link active" href="cart.html">Cart</a>
+          <a class="nav-link" aria-current="page">Cart</a>
         </li>
     </div>
   </div> <!-- end class container-fluid -->
   </nav> <!-- end class navbar -->
  
   <div id="welcome">
-    <h1>Welcome to CP Shopping.</h1>
-    <h3>All shopping, all the time!</h2>
+    <h1>Shopping Cart</h1>
+    <h3>Thanks for shopping with us!</h2>
   </div>
+  
+  <!-- show shopping cart -->
+  <table class="table table-striped table-dark table-sm" >
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Item</th>
+      <th scope="col">Price</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody id="checkout">
+    <tr>
+      <th scope="row">1</th>
+      <td>Music Player</td>
+      <td>$20</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Nintendo Switch</td>
+      <td>$300</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Laptop</td>
+      <td>$400</td>
+      <td>1</td>
+    </tr>
+    <tr class="text-primary">
+      <th scope="row"></th>
+      <td>Total</td>
+      <td>$Money</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+  <script src="cart.js"></script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+[aria-current] {
+    font-weight: bold;
+    background-color: #c504cf;
+  }
+  
+.table {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;}  
+  
+#welcome {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial;
+  background-color: orange;
+  text-align: center;
+}
+
+#cart-text {
+  font-weight: bold;
+  font-size: large;
+}
+
+.navbar-brand {
+  font-size: large;
+  font-weight: bold;
+}
