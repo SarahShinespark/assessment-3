@@ -8,10 +8,14 @@ INSERT INTO customers (first_name, last_name, email, address_line1, address_line
   VALUES ('Baxter', 'Stockman', 'baxtock@yahoo.com', '444 Evil Lair Dr', 'Apt 4', 'Manhattan', 'NY', '09241');
 INSERT INTO customers (first_name, last_name, email, address_line1, city, state, zip)
   VALUES ('Bugs', 'Bunny', 'whatsupdoc@gmail.com', '371 Big Hole Circle', 'Albequerque', 'NM', '19743');
-
+INSERT INTO customers (first_name, last_name, email, address_line1, address_line2, city, state, zip)
+  VALUES ('Super', 'Mario', 'wahoo_man@gmail.com', '123 Nintendo Drive', '2nd Mushroom', 'Richmond', 'WA', '38823');
+  
 INSERT INTO categories (name) VALUES ('Kitchen');
 INSERT INTO categories (name) VALUES ('Electronics');
 INSERT INTO categories (name) VALUES ('Kids');
+INSERT INTO categories (name) VALUES ('Sports');
+INSERT INTO categories (name) VALUES ('Garden');
 
 INSERT INTO products (name, category_id, price) VALUES ('Frying Pan', 1, 20);
 INSERT INTO products (name, category_id, price) VALUES ('Mini Fridge', 1, 30);
