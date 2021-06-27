@@ -12,6 +12,7 @@
 
 // Retrieve localStorage into object "list"
 let list = JSON.parse(localStorage.getItem('key'));
+if(!list) list = []
 
 // countList: Object with the occurrence of each item name
 //    {"Soda Can": 1}, {"Diaper": 3}
@@ -34,11 +35,11 @@ for( let name in countList){
     let count = countList[name]
     let price = getPrice(name, list)
     // console.log("Name ", name, "Price $", price, "Count ", count)
-    output += `<tr><th scope="row">${row}</th><td>${name}</td><td>$${price}</td><td>${count}</td></tr>`
+    output += `<tr><th scope="row">${row}</th><td>${name}</td><td>$${price.toFixed(2)}</td><td>${count}</td></tr>`
     row += 1
 }
 // "Total" with sum of items
-output += `<tr class="text-primary"><th scope="row"></th><td>Total</td><td>$${getTotal(countList,list)}</td><td></td></tr>`
+output += `<tr class="text-primary"><th scope="row"></th><td>Total</td><td>$${getTotal(countList,list).toFixed(2)}</td><td></td></tr>`
 document.getElementById("checkout").innerHTML = output
 
 
@@ -62,4 +63,11 @@ function getTotal(countList, list){
         total += getPrice(name, list, count)
     }
     return total
+}
+
+
+function emptyCart(){
+    // Nice    
+    localStorage.clear()
+    location.reload()
 }

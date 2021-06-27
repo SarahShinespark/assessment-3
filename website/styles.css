@@ -1,35 +1,42 @@
+/*Currently selected tab*/
 [aria-current] {
     font-weight: bold;
     background-color: #c504cf;
   }
-  
+
+/*Shopping cart */
 .table {
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
   
 }  
-  
+
+/*Group of cards  */
 .card-deck {
   display: flex;
   justify-content: space-evenly;
 }
 
+/*Each card*/
 .card {
-  max-width: 300px;
-  margin-left: 10px;
-  margin-right: 10px;
+  max-width: 300px; 
+
 }
 
-.card-body {
+/*Card image*/
+.card-img-top {
   display: flex;
   align-items: center;
+  height: 200px;
 }
 
+/*Add a $ to designated numbers*/
 .money::before {
     content: '$';
 }
 
+/*Heading below navbar*/
 #welcome {
   max-width: 600px;
   margin-left: auto;
@@ -39,12 +46,20 @@
   text-align: center;
 }
 
+/*Navbar "Cart" item*/
 #cart-text {
   font-weight: bold;
   font-size: large;
 }
 
+/*Navbar*/
 .navbar-brand {
   font-size: large;
   font-weight: bold;
+}
+
+.empty-cart-btn {
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
 }

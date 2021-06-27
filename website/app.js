@@ -1,5 +1,6 @@
 
 let list = JSON.parse(localStorage.getItem('key'));
+if(!list) list = []
 // list.push({'Frying Pan':'20'})
 // list.push({'Baby Shark':'4'})
 // localStorage.setItem('key', JSON.stringify(list));
