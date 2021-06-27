@@ -6,8 +6,30 @@
 .table {
   max-width: 400px;
   margin-left: auto;
-  margin-right: auto;}  
+  margin-right: auto;
   
+}  
+  
+.card-deck {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  max-width: 300px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+}
+
+.money::before {
+    content: '$';
+}
+
 #welcome {
   max-width: 600px;
   margin-left: auto;

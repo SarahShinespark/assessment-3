@@ -45,7 +45,63 @@
  
   <div id="welcome">
     <h1>Kitchen Shopping</h1>
-    <h3>This is finally centered!</h2>
+    <h4>Here is our selection.</h4>
   </div>
+  
+  <!--Present the items for sale-->
+  <br><br>
+<div class="card-deck">
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6313/6313240_sd.jpg;maxHeight=640;maxWidth=550" alt="Dishwasher">
+    </div>
+    <div class="card-footer">
+      <h5 class="money">200</h5>
+      <h3>Dishwasher</p>
+      <button type="button"
+        class="btn btn-primary"
+        onclick="invoke(this)"
+        name="addToCart"
+        item-price="200"
+        item-name="Dishwasher">
+        Add to Cart
+      </button>
+    </div>  <!-- End card 1 footer -->
+  </div>  <!-- End card 1 -->
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/81555isP%2BLL.__AC_SY300_SX300_QL70_FMwebp_.jpg" alt="Frying Pan">
+    </div>
+    <div class="card-footer">
+      <h5 class="money">20</h5>
+      <h3>Frying Pan</p>
+      <button type="button"
+        class="btn btn-primary"
+        onclick="invoke(this)"
+        name="addToCart"
+        item-price="20"
+        item-name="Frying Pan">
+        Add to Cart
+      </button>
+    </div>  <!-- End card 2 footer -->
+  </div>  <!-- End card 2 -->
+  <div class="card">
+    <div class="card-body">
+      <img class="card-img-top" src="https://ashleyfurniture.scene7.com/is/image/AshleyFurniture/K600002600_1" alt="Mini Fridge">
+    </div>
+    <div class="card-footer">
+      <h5 class="money">30</h5>
+      <h3>Mini Fridge</p>
+      <button type="button"
+        class="btn btn-primary"
+        onclick="invoke(this)"
+        name="addToCart"
+        item-price="30"
+        item-name="Mini Fridge">
+        Add to Cart
+      </button>
+    </div>  <!-- End card 3 footer -->
+  </div>  <!-- End card 3 -->
+</div>  <!-- End class card-deck -->
 </body>
 </html>
